@@ -28,17 +28,17 @@ public class ThirdTestClas {
         // Ustawienie zmaksymalizowanego okna
         driver.manage().window().maximize();
         // przejście na wskazaną stronę
-        driver.get("https://pl.pinterest.com/");
+        driver.get("https://secure.last.fm/login");
     }
 
     @Test
     public void successLoginTest() {
-        driver.findElement(By.id("email")).sendKeys("igk44500@cndps.com");
-        driver.findElement(By.id("password")).sendKeys("haslo1");
-        driver.findElement(By.xpath("//html/body/div[1]/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]/div/div/div[1]/div[4]/div/div[1]/form/div[3]/button/div")).click();
 
-        Assert.assertTrue(
-                driver.findElement( By.xpath("//*[@id=\"HeaderContent\"]/div[1]/div/div/div[2]/div/div/div[3]/div[1]")).isDisplayed());
+        driver.findElement(By.id("id_username")).sendKeys("Aga111222");
+        driver.findElement(By.id("id_password")).sendKeys("haslo1!");
+        driver.findElement(By.cssSelector("#login > div:nth-child(5) > div > button")).click();
+
+        Assert.assertTrue(driver.findElement( By.cssSelector("#content > div:nth-child(2) > nav > div > div.site-auth.hidden-xs > a > img")).isDisplayed());
     }
 
 
