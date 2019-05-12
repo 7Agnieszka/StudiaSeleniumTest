@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class SecondTestClass {
+public class ThirdTestClas {
 
     WebDriver driver;
 
@@ -28,18 +28,21 @@ public class SecondTestClass {
         // Ustawienie zmaksymalizowanego okna
         driver.manage().window().maximize();
         // przejście na wskazaną stronę
-        driver.get("http://demo.testarena.pl");
+        driver.get("https://pl.pinterest.com/");
     }
 
     @Test
     public void successLoginTest() {
-        driver.findElement(By.id("email")).sendKeys("administrator@testarena.pl");
-        driver.findElement(By.id("password")).sendKeys("sumXQQ72$L");
-        driver.findElement(By.id("login")).click();
+        driver.findElement(By.id("email")).sendKeys("igk44500@cndps.com");
+        driver.findElement(By.id("password")).sendKeys("haslo1");
+        driver.findElement(By.xpath("//html/body/div[1]/div/div/div[2]/div/div/div[3]/div/div[1]/div/div/div[1]/div/div/div[1]/div[4]/div/div[1]/form/div[3]/button/div")).click();
 
         Assert.assertTrue(
-                driver.findElement( By.xpath("//html/body/header/div[2]/div[2]/a/span")).isDisplayed());
+                driver.findElement( By.xpath("//*[@id=\"HeaderContent\"]/div[1]/div/div/div[2]/div/div/div[3]/div[1]")).isDisplayed());
     }
+
+
+
 
     @AfterClass
     public void tearDown() {
