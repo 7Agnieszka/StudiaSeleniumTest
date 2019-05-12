@@ -38,8 +38,11 @@ public class ThirdTestClas {
         driver.findElement(By.id("id_password")).sendKeys("haslo1!");
         driver.findElement(By.cssSelector("#login > div:nth-child(5) > div > button")).click();
 
-        Assert.assertTrue(driver.findElement( By.cssSelector("#content > div:nth-child(2) > nav > div > div.site-auth.hidden-xs > a > img")).isDisplayed());
-    }
+       Assert.assertEquals(driver.findElement( By.cssSelector("#content > div:nth-child(2) > nav > div > div.site-auth.hidden-xs > a > img")).getAttribute("alt"),"Aga111222");
+
+
+
+      }
 
 
 
