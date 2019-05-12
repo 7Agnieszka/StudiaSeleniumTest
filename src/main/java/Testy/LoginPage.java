@@ -11,9 +11,9 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public LoginPage fillLoginForm(String email, String password) {
-        driver.findElement(By.id("id_username")).sendKeys("Aga111222");
-        driver.findElement(By.id("id_password")).sendKeys("haslo1!");
+    public LoginPage fillLoginForm(String username, String password) {
+        driver.findElement(By.id("id_username")).sendKeys(username);
+        driver.findElement(By.id("id_password")).sendKeys(password);
         return this;
     }
 

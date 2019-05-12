@@ -34,7 +34,7 @@ public class LoginTest {
     @Test
     public void successLoginTest() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillLoginForm("administrator@testarena.pl","sumXQQ72$L");
+        loginPage.fillLoginForm("Aga111222","haslo1!");
 
         DashboardPage dashboardPage = loginPage.submitLoginForm();
 
