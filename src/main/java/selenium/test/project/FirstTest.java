@@ -18,15 +18,4 @@ public class FirstTest {
         Assert.assertEquals(3,4);
     }
 
-    @Test
-    public void test3(){
-
-        Assert.assertEquals(3,4);
-    }
-
-    @Test
-    public void test4(){
-
-        Assert.assertEquals(3,4);
-    }
 }
