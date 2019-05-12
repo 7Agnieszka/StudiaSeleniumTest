@@ -23,6 +23,9 @@ public class FirstTest {
 
         Assert.assertEquals(driver.getTitle(),"Google");
 
+        driver.quit();
+        //close zamyka przegladare ale trzyma ja w pamieci, quit czysci pamiec
+
 
     }
 
