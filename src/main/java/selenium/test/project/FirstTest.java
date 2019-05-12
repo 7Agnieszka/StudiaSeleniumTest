@@ -27,7 +27,10 @@ public class FirstTest {
         //close zamyka przegladare ale trzyma ja w pamieci, quit czysci pamiec
 
 
+
     }
+
+
 
 
 }
