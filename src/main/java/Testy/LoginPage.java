@@ -19,13 +19,15 @@ public class LoginPage extends AbstractPage {
     @FindBy(id = "login")
     WebElement loginButon;
 
-
-    public LoginPage(WebDriver driver){
-        this.driver = driver;
-
-        PageFactory.initElements(this.driver,this);
-
+    public LoginPage(WebDriver driver) {
+        super(driver);
     }
+
+
+    //  public LoginPage(WebDriver driver){
+   //     this.driver = driver;
+//        PageFactory.initElements(this.driver,this);
+//    }
 
 
     public LoginPage fillLoginForm(String username, String password) {
