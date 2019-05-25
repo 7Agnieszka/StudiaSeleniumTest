@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends AbstractPage {
 
     WebDriver driver;
 
@@ -34,10 +34,6 @@ public class LoginPage {
         return this;
     }
 
-    public void keysSendToClearField(WebElement e, String text){
-        e.clear();
-        e.sendKeys(text);
-    }
 
     public DashboardPage submitLoginForm() {
         //driver.findElement(By.cssSelector("#login > div:nth-child(5) > div > button")).click();
